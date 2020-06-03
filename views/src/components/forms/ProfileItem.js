@@ -4,83 +4,89 @@ const ProfileItem = () => {
   return (
     <div className="container">
       <form>
+        <div className="card-header text-center text-bold">Profile Details</div>
         <br />
-        <div className="card-header">
-          <center>Profile Details</center>
+        <div className="row ">
+          <div className="col-md-6">
+            <label htmlFor="">First name</label>
+            <br />
+            <input type="text" required />
+          </div>
+          <div className="col-md-6">
+            <label htmlFor="">Last name</label>
+            <br />
+            <input type="text" required />
+          </div>
         </div>
         <br />
-        <div className="row">
-          <div className="col-sm">
-            <label htmlFor="">Firstname : </label>{" "}
+
+        <div className="row ">
+          <div className="col-md-6">
+            <label htmlFor="">Date of Birth</label>
+            <br />
+            <input type="date" required />
           </div>
-          <div className="col-sm">
-            <input type="text" placeholder="Firstname" required />
-          </div>
-          <div className="col-sm">
-            <label htmlFor="">Lastname : </label>{" "}
-          </div>
-          <div className="col-sm">
-            <input type="text" placeholder="Lastname" required />
+          <div className="col-md-6">
+            <label htmlFor="">Gender</label>
+            <br />
+            <input type="text" required />
           </div>
         </div>
         <br />
 
         <div className="row">
-          <div className="col-sm">
-            <label htmlFor="">Date of Birth : </label>{" "}
+          <div className="col col-md-4">
+            <label htmlFor="">Company Name</label>
+            <br />
+            <input type="email" required />
           </div>
-          <div className="col-sm">
-            <input type="date" placeholder="Date" required />
+          <div className="col col-md-4">
+            <label htmlFor="">Area of Interest</label>
+            <br />
+            <input type="text" required />
           </div>
-          <div className="col-sm">
-            <label htmlFor="">Gender : </label>{" "}
-          </div>
-          <div className="col-sm">
-            <input type="text" placeholder="Gender" required />
-          </div>
-        </div>
-        <br />
-
-        <div className="row">
-          <div className="col-sm">
-            <label htmlFor="">Company Name : </label>{" "}
-            <input type="email" placeholder="Name of Company" required />
-          </div>
-          <div className="col-sm">
-            <label htmlFor="">Area of Interest : </label>{" "}
-            <input type="text" placeholder="ML,Web,etc..," required />
-          </div>
-          <div className="col-sm">
-            <label htmlFor="">Desigination : </label>{" "}
-            <input type="text" placeholder="Designiation" required />
+          <div className="col col-md-4">
+            <label htmlFor="">Desigination</label>
+            <br />
+            <input type="text" required />
           </div>
         </div>
         <br />
 
         <div className="row">
-          <div className="col-sm">
-            <label htmlFor="">District : </label>{" "}
-            <input type="text" placeholder="District" required />
+          <div className="col col-md-4">
+            <label htmlFor="">District</label>
+            <br />
+            <select className="custom-select d-block w-75" required>
+              <option>Choose...</option>
+              <option>India</option>
+            </select>{" "}
           </div>
-          <div className="col-sm">
-            <label htmlFor="">State : </label>{" "}
-            <input type="text" placeholder="State" required />
+          <div className="col col-md-4">
+            <label htmlFor="">State</label>
+            <br />
+            <select className="custom-select d-block w-75" required>
+              <option>Choose...</option>
+              <option>Tamilnadu</option>
+            </select>
           </div>
 
-          <div className="col-sm">
-            <label htmlFor="">Pincode : </label>{" "}
-            <input maxLength="6" placeholder="Pincode" required />
+          <div className="col col-md-4">
+            <label htmlFor="">Pincode</label>
+            <br />
+            <input maxLength="6" required />
           </div>
         </div>
         <br />
-
-        <div className="row">
-          <div className="col-sm">
-            <input className="btn btn-primary" type="submit" value="Submit" />
-            <span> </span>
-            <input className="btn btn-primary" type="reset" value="Reset" />
+        <center>
+          <div className="row">
+            <div className="col-sm">
+              <input className="btn btn-primary" type="submit" value="Submit" />
+              <span> </span>
+              <input className="btn btn-primary" type="reset" value="Reset" />
+            </div>
           </div>
-        </div>
+        </center>
       </form>
     </div>
   );
