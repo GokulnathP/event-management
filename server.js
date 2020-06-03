@@ -3,12 +3,19 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+//Route imports
+const userRoutes = require('./routes/user');
+
 // Variables to be used
 const app = express();
 
 // Middlewares setup
 // Json input parsing
 app.use(bodyParser.json());
+
+// Routes
+
+app.use('/user', userRoutes);
 
 // cors middleware
 app.use((req, res, next) => {
