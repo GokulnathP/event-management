@@ -1,0 +1,34 @@
+{
+  "name": "event-management",
+  "version": "1.0.0",
+  "description": "ThoughtWorks event management problem statement",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GokulnathP/event-management.git"
+  },
+  "keywords": [
+    "Event",
+    "Management",
+    "NodeJS",
+    "ReactJS",
+    "(MERN",
+    "stack)"
+  ],
+  "author": "Event Management Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GokulnathP/event-management/issues"
+  },
+  "homepage": "https://github.com/GokulnathP/event-management#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
