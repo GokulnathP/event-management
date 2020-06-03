@@ -47,4 +47,10 @@ router.put(
     passwordController.resetPassword
 );
 
+// put /user/forgotPassword/email
+router.put('/forgotPassword/:email', passwordController.forgotPassword);
+
+// put /user/resetForgotPassword/otp
+router.put('/resetForgotPassword/:otp', passwordController.resetForgotPassword);
+
 module.exports = router;
