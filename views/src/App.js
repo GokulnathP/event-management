@@ -6,7 +6,7 @@ import Signup from './components/forms/Signup';
 //import ProfileItem from "./components/forms/ProfileItem";
 
 function App() {
-  return <div className=''>Hello World Hii!!!!!!!!!</div>;
+  return <div className=''>Hi</div>;
 }
 
 export default App;
