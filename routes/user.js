@@ -3,7 +3,6 @@ const { body } = require('express-validator');
 
 const router = express.Router();
 
-// Controller imports
 const userController = require('../controllers/user');
 const passwordController = require('../controllers/password');
 
